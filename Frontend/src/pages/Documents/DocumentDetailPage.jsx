@@ -44,7 +44,7 @@ const DocumentDetailPage = () => {
                   return filePath;
                 }
 
-                const baseUrl =  'http://localhost:8000';
+                const baseUrl =  "https://edumind-ai-agm0.onrender.com";
                 return `${baseUrl}${filePath.startsWith('/') ? '' : '/'}${filePath}`;
               };
 
