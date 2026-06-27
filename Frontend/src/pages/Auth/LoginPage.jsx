@@ -70,6 +70,7 @@ const LoginPage = () => {
                 <BrainCircuit strokeWidth={2} className='w-7 h-7 text-white' />
               </div>
               <h1 className='text-2xl font-medium text-slate-900 tracking-tight mb-2 dark:text-slate-100'> welcome back</h1>
+                <h1 className='text-2xl font-medium text-slate-900 tracking-tight mb-2 dark:text-slate-100'>DoCLearn</h1>
               <p className='text-slate-500 text-sm dark:text-slate-400'> sign in to your account</p>
             </div>
             {/**Form */}

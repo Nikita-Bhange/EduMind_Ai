@@ -71,6 +71,7 @@ import { getPasswordMessage, validateEmail, validatePassword } from '../../utils
               <div className='inline-flex items-center justify-center w-14 h-14 rounded-2xl  bg-linear-to-br from-emerald-400 to-teal-500 shadow-lg shadow-emerald-500/25 mb-6 dark:from-[#FF3CAC] dark:to-[#784BA0] dark:shadow-[#7A00FF]/35'>
                 <BrainCircuit strokeWidth={2} className='w-7 h-7 text-white' />
               </div>
+                <h1 className='text-2xl font-medium text-slate-900 tracking-tight mb-2 dark:text-slate-100'>DoCLearn</h1>
               <h1 className='text-2xl font-medium text-slate-900 tracking-tight mb-2 dark:text-slate-100'>Create Your Account</h1>
               <p className='text-slate-500 text-sm dark:text-slate-400'> Start your AI powered learning ....</p>
             </div>
