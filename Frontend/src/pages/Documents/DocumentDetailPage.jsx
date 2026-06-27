@@ -36,17 +36,20 @@ const DocumentDetailPage = () => {
 
               // Helper function to get the full PDF URL
               const getPdfUrl = () => {
-                if (!document?.data?.filePath) return null;
+  if (!document?.data?.filePath) return null;
 
-                const filePath = document.data.filePath;
+  const filePath = document.data.filePath;
+  const baseUrl = "https://edumind-ai-agm0.onrender.com";
 
-                if (filePath.startsWith('http://') || filePath.startsWith('https://')) {
-                  return filePath;
-                }
-
-                const baseUrl =  "https://edumind-ai-agm0.onrender.com";
-                return `${baseUrl}${filePath.startsWith('/') ? '' : '/'}${filePath}`;
-              };
+  // Strip any hardcoded origin (localhost or old URL) and keep only the path
+  try {
+    const url = new URL(filePath);
+    return `${baseUrl}${url.pathname}`;
+  } catch {
+    // filePath is already a relative path like /uploads/file.pdf
+    return `${baseUrl}${filePath.startsWith('/') ? '' : '/'}${filePath}`;
+  }
+};
 
 
 
