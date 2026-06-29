@@ -51,7 +51,7 @@ const Sidebar = ({isSidebarOpen, toggleSidebar}) => {
           </div>
 
           <h1 className="text-sm md:text-base font-bold text-slate-900 tracking-tight dark:text-slate-100">
-            DoCLearn
+            EduMind_Ai
           </h1>
         </div>
 
