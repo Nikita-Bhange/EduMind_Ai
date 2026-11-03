@@ -25,7 +25,7 @@ const app = express();
  
 app.use(
   cors({
-    origin: "https://edu-mind-ai-psi.vercel.app",
+    origin: process.env.FRONTEND_URL || "https://edu-mind-ai-psi.vercel.app",
     methods: ["GET", "PUT", "POST", "DELETE"],
     allowedHeaders: ["Content-Type", "Authorization"],
     credentials: true,
